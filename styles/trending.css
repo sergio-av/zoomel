@@ -1,92 +1,140 @@
-/*Márgenes laterales para el body */ 
-body{
-    margin-left: 5%;
-    margin-right: 5%;
+/*Márgenes laterales para el body */
+body {
+  margin-left: 5%;
+  margin-right: 5%;
 }
-/*Alineación y márgenes para los elementos del header */ 
-h1{
-    font-weight: 600;
-    font-size: 34px;
-    line-height: 140%;
-    margin-top: 10%;
-    text-align: center;
+/*Alineación y márgenes para los elementos del header */
+h1 {
+  font-weight: 600;
+  font-size: 34px;
+  line-height: 140%;
+  margin-top: 10%;
+  text-align: center;
 }
-h2{
-    font-weight: 600;
-    font-size: 19px;
-    line-height: 140%;  
-    width: 543px;
-    margin-top: 2%;
-    text-align: center;
-    margin: 9px auto;
-    margin-bottom: 10px;
-    color: #C9CFCD;
+h2 {
+  font-weight: 600;
+  font-size: 19px;
+  line-height: 140%;
+  width: 543px;
+  margin-top: 2%;
+  text-align: center;
+  margin: 9px auto;
+  margin-bottom: 10px;
+  color: #c9cfcd;
 }
 
-/*Establece la posición de las imágenes dento del cotenedor */ 
-.grid-gallery {
-    margin: 97px auto;
-    display: grid;
-    grid-auto-rows: 200px;
-    grid-gap: 1rem;
-    grid-auto-flow: column row;
-    max-width: 1000px;
-  }
-  
-  @media all and (min-width: 320px) {
-    .grid-gallery {
-      grid-template-columns: repeat(1, 1fr);
-    }
-  }
-  
-  @media all and (min-width: 768px) {
-    .grid-gallery {
-      grid-template-columns: repeat(3, 1fr);
-    }
-  }
-  
-  @media all and (min-width: 1024px) {
-    .grid-gallery {
-      grid-template-columns: repeat(6, 1fr);
-    }
-  }
-  
-  .grid-gallery__item:nth-child(11n+1) {
-    grid-column: span 1;
-  }
-  
-  .grid-gallery__item:nth-child(11n+4) {
-    grid-column: span 2;
-    grid-row: span 1;
-  }
-  
-  .grid-gallery__item:nth-child(11n+6) {
-    grid-column: span 3;
-    grid-row: span 1;
-  }
-  
-  .grid-gallery__item:nth-child(11n+7) {
-    grid-column: span 1;
-    grid-row: span 2;
-  }
-  
-  .grid-gallery__item:nth-child(11n+8) {
-    grid-column: span 2;
-    grid-row: span 2;
-  }
-  
-  .grid-gallery__item:nth-child(11n+9) {
-    grid-row: span 3;
-  }
-  
-  .grid-gallery__image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+/*Establece la posición de las imágenes dento del cotenedor */
+.galeria {
+  margin: 97px auto;
+  display: grid;
+  grid-auto-rows: 200px;
+  grid-gap: 1rem;
+  grid-auto-flow: column row;
+  max-width: 1000px;
+}
 
+@media all and (min-width: 320px) {
+  .galeria {
+    grid-template-columns: repeat(1, 1fr);
   }
-  
-  img:hover{
-    filter: brightness(30%); 
-    border-radius: 10%;
+}
+
+@media all and (min-width: 768px) {
+  .galeria {
+    grid-template-columns: repeat(3, 1fr);
   }
+}
+
+@media all and (min-width: 1024px) {
+  .galeria {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+.galeria__item:nth-child(1) {
+  grid-column: span 1;
+}
+
+.galeria__item:nth-child(2) {
+  grid-column: span 2;
+  grid-row: span 1;
+}
+
+.galeria__item:nth-child(3) {
+  grid-column: span 3;
+  grid-row: span 1;
+}
+
+.galeria__item:nth-child(11n + 7) {
+  grid-column: span 1;
+  grid-row: span 2;
+}
+
+.galeria__item:nth-child(11n + 8) {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.galeria__item:nth-child(11n + 9) {
+  grid-row: span 3;
+}
+
+.galeria__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+
+.avatar {
+  width: 80px;
+  height: 94.58px;
+  border-radius: 112.5px;
+  margin: 0 auto;
+}
+
+div.contenido *{
+  background: none;
+}
+
+.galeria__item{
+  display: flex;
+  padding: 0%;
+  justify-content: center;
+  align-items: center;
+}
+
+div.contenido {
+  width: auto;
+  padding: 0%;
+  background: none;
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  z-index: 1;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.galeria__image:hover {
+  filter: brightness(30%);
+  border-radius: 25px;
+}
+
+.contenido:hover .galeria__image{
+  filter: brightness(30%);
+}
+
+.galeria__item:hover .contenido {
+  display: flex;
+}
+
+.galeria__item:hover .galeria__image{
+  filter: brightness(30%);
+  border-radius: 25px;
+}
+
+
+
