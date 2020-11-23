@@ -1,296 +1,419 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="stylesheet" href="../styles/main.css">
-    <link rel="stylesheet" href="../styles/trending.css">
+    <link rel="stylesheet" href="../styles/main.css" />
+    <link rel="stylesheet" href="../styles/trending.css" />
     <!--Escribimos una pequeña presentación-->
-</head>
+  </head>
 
-<body>
+  <body>
+    <!--    ******************HEADER****************************** -->
+    <header>
+      <nav class="menu">
+        <div class="logo">
+          <a href="login.html"><img src="../assets/logo/logo.svg" alt="logo" /></a>
+        </div>
+        <ul class="items">
+          <li><a href="login.html">Home</a></li>
+          <li><a href="trending.html">Trending</a></li>
+          <li><a href="catalog.html">Catálogo</a></li>
+          <li><a href="fotographers.html">Fotógrafos</a></li>
+          <li>
+            <a href="#log-out"><img src="../assets/icon/log-out.svg" alt="log-out"/></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
     <h1>Nuestras mejores fotografías</h1>
-    <h2>Aquí encontrarás ejemplos de algunas de nuestras mejores
-        fotos y podrás consultar el autor.</h2>
+    <h2>
+      Aquí encontrarás ejemplos de algunas de nuestras mejores fotos y podrás
+      consultar el autor.
+    </h2>
 
     <!---Creamos el contenedor de las imágenes-->
     <div class="galeria">
-        <!--Introducimos las imágenes-->
-        <a class="galeria__item" href="#">
-            <div class="contenido">
-                <img class="avatar" src="../assets/avatars/Avatar1.svg">
-                <div class="sub_contenido">
-                    <h5 class="nombre">Felipe Iglesias</h5>
-                    <img class="puntuation" src="../assets/ilustration/stars.svg" alt="punt">
-                </div>
-            </div>
-            <img class="galeria__image" src="../assets/images/paisaje1.jpg">
-        </a>
-        <a class="galeria__item" href="#">
-            <div class="contenido">
-                <img class="avatar" src="../assets/avatars/Avatar2.svg">
-                <div class="sub_contenido">
-                    <h5 class="nombre">Obatalá Barak</h5>
-                    <img class="puntuation" src="../assets/ilustration/stars.svg" alt="punt">
-                </div>
-            </div>
-            <img class="galeria__image" src="../assets/images/trending4.jpg">
-        </a>
-        <a class="galeria__item" href="#">
-            <div class="contenido">
-                <img class="avatar" src="../assets/avatars/Avatar1.svg">
-                <div class="sub_contenido">
-                    <h5 class="nombre">Felipe Iglesias</h5>
-                    <img class="puntuation" src="../assets/ilustration/stars.svg" alt="punt">
-                </div>
-            </div>
-            <img class="galeria__image" src="../assets/images/trending11.jpeg">
-        </a>
-        <a class="galeria__item" href="#">
-            <div class="contenido">
-                <img class="avatar" src="../assets/avatars/Avatar6.svg">
-                <div class="sub_contenido">
-                    <h5 class="nombre">Estuard Littel</h5>
-                    <img class="puntuation" src="../assets/ilustration/stars.svg" alt="punt">
-                </div>
-            </div>
-            <img class="galeria__image" src="../assets/images/trending2.jpg">
-        </a>
-        <a class="galeria__item" href="#">
-            <div class="contenido">
-                <img class="avatar" src="../assets/avatars/Avatar5.svg">
-                <div class="sub_contenido">
-                    <h5 class="nombre">Alberto De la Rosa</h5>
-                    <img class="puntuation" src="../assets/ilustration/stars.svg" alt="punt">
-                </div>
-            </div>
-            <img class="galeria__image" src="../assets/images/trending14.jpeg">
-        </a>
-        <a class="galeria__item" href="#">
-            <div class="contenido">
-                <img class="avatar" src="../assets/avatars/Avatar2.svg">
-                <div class="sub_contenido">
-                    <h5 class="nombre">Obatalá Barak</h5>
-                    <img class="puntuation" src="../assets/ilustration/stars.svg" alt="punt">
-                </div>
-            </div>
-            <img class="galeria__image" src="../assets/images/paisaje2.jpg">
-        </a>
-        <a class="galeria__item" href="#">
-            <div class="contenido">
-                <img class="avatar" src="../assets/avatars/Avatar3.svg">
-                <div class="sub_contenido">
-                    <h5 class="nombre">Ana Fernández</h5>
-                    <img class="puntuation" src="../assets/ilustration/stars.svg" alt="punt">
-                </div>
-            </div>
-            <img class="galeria__image" src="../assets/images/trending7.webp">
-        </a>
-        <a class="galeria__item" href="#">
-            <div class="contenido">
-                <img class="avatar" src="../assets/avatars/Avatar4.svg">
-                <div class="sub_contenido">
-                    <h5 class="nombre">Antonio Rodríguez</h5>
-                    <img class="puntuation" src="../assets/ilustration/stars.svg" alt="punt">
-                </div>
-            </div>
-            <img class="galeria__image" src="../assets/images/trending9.jpeg">
-        </a>
-        <a class="galeria__item" href="#">
-            <div class="contenido">
-                <img class="avatar" src="../assets/avatars/Avatar2.svg">
-                <div class="sub_contenido">
-                    <h5 class="nombre">Obatalá Barak</h5>
-                    <img class="puntuation" src="../assets/ilustration/stars.svg" alt="punt">
-                </div>
-            </div>
-            <img class="galeria__image" src="../assets/images/trending15.jpeg">
-        </a>
-        <a class="galeria__item" href="#">
-            <div class="contenido">
-                <img class="avatar" src="../assets/avatars/Avatar3.svg">
-                <div class="sub_contenido">
-                    <h5 class="nombre">Ana Fernández</h5>
-                    <img class="puntuation" src="../assets/ilustration/stars.svg" alt="punt">
-                </div>
-            </div>
-            <img class="galeria__image" src="../assets/images/ternding1.jpg">
-        </a>
-        <a class="galeria__item" href="#">
-            <div class="contenido">
-                <img class="avatar" src="../assets/avatars/Avatar6.svg">
-                <div class="sub_contenido">
-                    <h5 class="nombre">Estuard Littel</h5>
-                    <img class="puntuation" src="../assets/ilustration/stars.svg" alt="punt">
-                </div>
-            </div>
-            <img class="galeria__image" src="../assets/images/trending13.jpeg">
-        </a>
-        <a class="galeria__item" href="#">
-            <div class="contenido">
-                <img class="avatar" src="../assets/avatars/Avatar5.svg">
-                <div class="sub_contenido">
-                    <h5 class="nombre">Alberto De la Rosa</h5>
-                    <img class="puntuation" src="../assets/ilustration/stars.svg" alt="punt">
-                </div>
-            </div>
-            <img class="galeria__image" src="../assets/images/trending10.jpeg">
-        </a>
-        <a class="galeria__item" href="#">
-            <div class="contenido">
-                <img class="avatar" src="../assets/avatars/Avatar3.svg">
-                <div class="sub_contenido">
-                    <h5 class="nombre">Ana Fernández</h5>
-                    <img class="puntuation" src="../assets/ilustration/stars.svg" alt="punt">
-                </div>
-            </div>
-            <img class="galeria__image" src="../assets/images/trending8.jpeg">
-        </a>
-        <a class="galeria__item" href="#">
-            <div class="contenido">
-                <img class="avatar" src="../assets/avatars/Avatar4.svg">
-                <div class="sub_contenido">
-                    <h5 class="nombre">Antonio Rodríguez</h5>
-                    <img class="puntuation" src="../assets/ilustration/stars.svg" alt="punt">
-                </div>
-            </div>
-            <img class="galeria__image" src="../assets/images/trending16.jpeg">
-        </a>
-        <a class="galeria__item" href="#">
-            <div class="contenido">
-                <img class="avatar" src="../assets/avatars/Avatar5.svg">
-                <div class="sub_contenido">
-                    <h5 class="nombre">Alberto De la Rosa</h5>
-                    <img class="puntuation" src="../assets/ilustration/stars.svg" alt="punt">
-                </div>
-            </div>
-            <img class="galeria__image" src="../assets/images/trending21.jpeg">
-        </a>
-        <a class="galeria__item" href="#">
-            <div class="contenido">
-                <img class="avatar" src="../assets/avatars/Avatar8.svg">
-                <div class="sub_contenido">
-                    <h5 class="nombre">Lana Roades</h5>
-                    <img class="puntuation" src="../assets/ilustration/stars.svg" alt="punt">
-                </div>
-            </div>
-            <img class="galeria__image" src="../assets/images/trending17.jpeg">
-        </a>
-        <a class="galeria__item" href="#">
-            <div class="contenido">
-                <img class="avatar" src="../assets/avatars/Avatar1.svg">
-                <div class="sub_contenido">
-                    <h5 class="nombre">Felipe Iglesias</h5>
-                    <img class="puntuation" src="../assets/ilustration/stars.svg" alt="punt">
-                </div>
-            </div>
-            <img class="galeria__image" src="../assets/images/trending18.jpeg">
-        </a>
-        <a class="galeria__item" href="#">
-            <div class="contenido">
-                <img class="avatar" src="../assets/avatars/Avatar7.svg">
-                <div class="sub_contenido">
-                    <h5 class="nombre">Abraham Suárez</h5>
-                    <img class="puntuation" src="../assets/ilustration/stars.svg" alt="punt">
-                </div>
-            </div>
-            <img class="galeria__image" src="../assets/images/trending19.jpeg">
-        </a>
-        <a class="galeria__item" href="#">
-            <div class="contenido">
-                <img class="avatar" src="../assets/avatars/Avatar2.svg">
-                <div class="sub_contenido">
-                    <h5 class="nombre">Obatalá Barak</h5>
-                    <img class="puntuation" src="../assets/ilustration/stars.svg" alt="punt">
-                </div>
-            </div>
-            <img class="galeria__image" src="../assets/images/trending20.jpeg">
-        </a>
-        <a class="galeria__item" href="#">
-            <div class="contenido">
-                <img class="avatar" src="../assets/avatars/Avatar4.svg">
-                <div class="sub_contenido">
-                    <h5 class="nombre">Antonio Rodríguez</h5>
-                    <img class="puntuation" src="../assets/ilustration/stars.svg" alt="punt">
-                </div>
-            </div>
-            <img class="galeria__image" src="../assets/images/trending22.jpeg">
-        </a>
-        <a class="galeria__item" href="#">
-            <div class="contenido">
-                <img class="avatar" src="../assets/avatars/Avatar3.svg">
-                <div class="sub_contenido">
-                    <h5 class="nombre">Ana Fernández</h5>
-                    <img class="puntuation" src="../assets/ilustration/stars.svg" alt="punt">
-                </div>
-            </div>
-            <img class="galeria__image" src="../assets/images/trending23.jpeg">
-        </a>
-        <a class="galeria__item" href="#">
-            <div class="contenido">
-                <img class="avatar" src="../assets/avatars/Avatar7.svg">
-                <div class="sub_contenido">
-                    <h5 class="nombre">Abraham Suárez</h5>
-                    <img class="puntuation" src="../assets/ilustration/stars.svg" alt="punt">
-                </div>
-            </div>
-            <img class="galeria__image" src="../assets/images/trending24.jpeg">
-        </a>
-        <a class="galeria__item" href="#">
-            <div class="contenido">
-                <img class="avatar" src="../assets/avatars/Avatar4.svg">
-                <div class="sub_contenido">
-                    <h5 class="nombre">Antonio Rodríguez</h5>
-                    <img class="puntuation" src="../assets/ilustration/stars.svg" alt="punt">
-                </div>
-            </div>
-            <img class="galeria__image" src="../assets/images/trending25.jpg">
-        </a>
-        <a class="galeria__item" href="#">
-            <div class="contenido">
-                <img class="avatar" src="../assets/avatars/Avatar6.svg">
-                <div class="sub_contenido">
-                    <h5 class="nombre">Estuard Littel</h5>
-                    <img class="puntuation" src="../assets/ilustration/stars.svg" alt="punt">
-                </div>
-            </div>
-            <img class="galeria__image" src="../assets/images/trending26.jpg">
-        </a>
-        <a class="galeria__item" href="#">
-            <div class="contenido">
-                <img class="avatar" src="../assets/avatars/Avatar8.svg">
-                <div class="sub_contenido">
-                    <h5 class="nombre">Lana Roades</h5>
-                    <img class="puntuation" src="../assets/ilustration/stars.svg" alt="punt">
-                </div>
-            </div>
-            <img class="galeria__image" src="../assets/images/trending27.jpg">
-        </a>
-        <a class="galeria__item" href="#">
-            <div class="contenido">
-                <img class="avatar" src="../assets/avatars/Avatar5.svg">
-                <div class="sub_contenido">
-                    <h5 class="nombre">Alberto De la Rosa</h5>
-                    <img class="puntuation" src="../assets/ilustration/stars.svg" alt="punt">
-                </div>
-            </div>
-            <img class="galeria__image" src="../assets/images/trending28.jpg">
-        </a>
-        <a class="galeria__item" href="#">
-            <div class="contenido">
-                <img class="avatar" src="../assets/avatars/Avatar8.svg">
-                <div class="sub_contenido">
-                    <h5 class="nombre">Lana Roades</h5>
-                    <img class="puntuation" src="../assets/ilustration/stars.svg" alt="punt">
-                </div>
-            </div>
-            <img class="galeria__image" src="../assets/images/trending29.jpg">
-        </a>
+      <!--Introducimos las imágenes-->
+      <a class="galeria__item" href="#">
+        <div class="contenido">
+          <img class="avatar" src="../assets/avatars/Avatar1.svg" />
+          <div class="sub_contenido">
+            <h5 class="nombre">Felipe Iglesias</h5>
+            <img
+              class="puntuation"
+              src="../assets/ilustration/stars.svg"
+              alt="punt"
+            />
+          </div>
+        </div>
+        <img class="galeria__image" src="../assets/images/paisaje1.jpg" />
+      </a>
+      <a class="galeria__item" href="#">
+        <div class="contenido">
+          <img class="avatar" src="../assets/avatars/Avatar2.svg" />
+          <div class="sub_contenido">
+            <h5 class="nombre">Obatalá Barak</h5>
+            <img
+              class="puntuation"
+              src="../assets/ilustration/stars.svg"
+              alt="punt"
+            />
+          </div>
+        </div>
+        <img class="galeria__image" src="../assets/images/trending4.jpg" />
+      </a>
+      <a class="galeria__item" href="#">
+        <div class="contenido">
+          <img class="avatar" src="../assets/avatars/Avatar1.svg" />
+          <div class="sub_contenido">
+            <h5 class="nombre">Felipe Iglesias</h5>
+            <img
+              class="puntuation"
+              src="../assets/ilustration/stars.svg"
+              alt="punt"
+            />
+          </div>
+        </div>
+        <img class="galeria__image" src="../assets/images/trending11.jpeg" />
+      </a>
+      <a class="galeria__item" href="#">
+        <div class="contenido">
+          <img class="avatar" src="../assets/avatars/Avatar6.svg" />
+          <div class="sub_contenido">
+            <h5 class="nombre">Estuard Littel</h5>
+            <img
+              class="puntuation"
+              src="../assets/ilustration/stars.svg"
+              alt="punt"
+            />
+          </div>
+        </div>
+        <img class="galeria__image" src="../assets/images/trending2.jpg" />
+      </a>
+      <a class="galeria__item" href="#">
+        <div class="contenido">
+          <img class="avatar" src="../assets/avatars/Avatar5.svg" />
+          <div class="sub_contenido">
+            <h5 class="nombre">Alberto De la Rosa</h5>
+            <img
+              class="puntuation"
+              src="../assets/ilustration/stars.svg"
+              alt="punt"
+            />
+          </div>
+        </div>
+        <img class="galeria__image" src="../assets/images/trending14.jpeg" />
+      </a>
+      <a class="galeria__item" href="#">
+        <div class="contenido">
+          <img class="avatar" src="../assets/avatars/Avatar2.svg" />
+          <div class="sub_contenido">
+            <h5 class="nombre">Obatalá Barak</h5>
+            <img
+              class="puntuation"
+              src="../assets/ilustration/stars.svg"
+              alt="punt"
+            />
+          </div>
+        </div>
+        <img class="galeria__image" src="../assets/images/paisaje2.jpg" />
+      </a>
+      <a class="galeria__item" href="#">
+        <div class="contenido">
+          <img class="avatar" src="../assets/avatars/Avatar3.svg" />
+          <div class="sub_contenido">
+            <h5 class="nombre">Ana Fernández</h5>
+            <img
+              class="puntuation"
+              src="../assets/ilustration/stars.svg"
+              alt="punt"
+            />
+          </div>
+        </div>
+        <img class="galeria__image" src="../assets/images/trending7.webp" />
+      </a>
+      <a class="galeria__item" href="#">
+        <div class="contenido">
+          <img class="avatar" src="../assets/avatars/Avatar4.svg" />
+          <div class="sub_contenido">
+            <h5 class="nombre">Antonio Rodríguez</h5>
+            <img
+              class="puntuation"
+              src="../assets/ilustration/stars.svg"
+              alt="punt"
+            />
+          </div>
+        </div>
+        <img class="galeria__image" src="../assets/images/trending9.jpeg" />
+      </a>
+      <a class="galeria__item" href="#">
+        <div class="contenido">
+          <img class="avatar" src="../assets/avatars/Avatar2.svg" />
+          <div class="sub_contenido">
+            <h5 class="nombre">Obatalá Barak</h5>
+            <img
+              class="puntuation"
+              src="../assets/ilustration/stars.svg"
+              alt="punt"
+            />
+          </div>
+        </div>
+        <img class="galeria__image" src="../assets/images/trending15.jpeg" />
+      </a>
+      <a class="galeria__item" href="#">
+        <div class="contenido">
+          <img class="avatar" src="../assets/avatars/Avatar3.svg" />
+          <div class="sub_contenido">
+            <h5 class="nombre">Ana Fernández</h5>
+            <img
+              class="puntuation"
+              src="../assets/ilustration/stars.svg"
+              alt="punt"
+            />
+          </div>
+        </div>
+        <img class="galeria__image" src="../assets/images/ternding1.jpg" />
+      </a>
+      <a class="galeria__item" href="#">
+        <div class="contenido">
+          <img class="avatar" src="../assets/avatars/Avatar6.svg" />
+          <div class="sub_contenido">
+            <h5 class="nombre">Estuard Littel</h5>
+            <img
+              class="puntuation"
+              src="../assets/ilustration/stars.svg"
+              alt="punt"
+            />
+          </div>
+        </div>
+        <img class="galeria__image" src="../assets/images/trending13.jpeg" />
+      </a>
+      <a class="galeria__item" href="#">
+        <div class="contenido">
+          <img class="avatar" src="../assets/avatars/Avatar5.svg" />
+          <div class="sub_contenido">
+            <h5 class="nombre">Alberto De la Rosa</h5>
+            <img
+              class="puntuation"
+              src="../assets/ilustration/stars.svg"
+              alt="punt"
+            />
+          </div>
+        </div>
+        <img class="galeria__image" src="../assets/images/trending10.jpeg" />
+      </a>
+      <a class="galeria__item" href="#">
+        <div class="contenido">
+          <img class="avatar" src="../assets/avatars/Avatar3.svg" />
+          <div class="sub_contenido">
+            <h5 class="nombre">Ana Fernández</h5>
+            <img
+              class="puntuation"
+              src="../assets/ilustration/stars.svg"
+              alt="punt"
+            />
+          </div>
+        </div>
+        <img class="galeria__image" src="../assets/images/trending8.jpeg" />
+      </a>
+      <a class="galeria__item" href="#">
+        <div class="contenido">
+          <img class="avatar" src="../assets/avatars/Avatar4.svg" />
+          <div class="sub_contenido">
+            <h5 class="nombre">Antonio Rodríguez</h5>
+            <img
+              class="puntuation"
+              src="../assets/ilustration/stars.svg"
+              alt="punt"
+            />
+          </div>
+        </div>
+        <img class="galeria__image" src="../assets/images/trending16.jpeg" />
+      </a>
+      <a class="galeria__item" href="#">
+        <div class="contenido">
+          <img class="avatar" src="../assets/avatars/Avatar5.svg" />
+          <div class="sub_contenido">
+            <h5 class="nombre">Alberto De la Rosa</h5>
+            <img
+              class="puntuation"
+              src="../assets/ilustration/stars.svg"
+              alt="punt"
+            />
+          </div>
+        </div>
+        <img class="galeria__image" src="../assets/images/trending21.jpeg" />
+      </a>
+      <a class="galeria__item" href="#">
+        <div class="contenido">
+          <img class="avatar" src="../assets/avatars/Avatar8.svg" />
+          <div class="sub_contenido">
+            <h5 class="nombre">Lana Roades</h5>
+            <img
+              class="puntuation"
+              src="../assets/ilustration/stars.svg"
+              alt="punt"
+            />
+          </div>
+        </div>
+        <img class="galeria__image" src="../assets/images/trending17.jpeg" />
+      </a>
+      <a class="galeria__item" href="#">
+        <div class="contenido">
+          <img class="avatar" src="../assets/avatars/Avatar1.svg" />
+          <div class="sub_contenido">
+            <h5 class="nombre">Felipe Iglesias</h5>
+            <img
+              class="puntuation"
+              src="../assets/ilustration/stars.svg"
+              alt="punt"
+            />
+          </div>
+        </div>
+        <img class="galeria__image" src="../assets/images/trending18.jpeg" />
+      </a>
+      <a class="galeria__item" href="#">
+        <div class="contenido">
+          <img class="avatar" src="../assets/avatars/Avatar7.svg" />
+          <div class="sub_contenido">
+            <h5 class="nombre">Abraham Suárez</h5>
+            <img
+              class="puntuation"
+              src="../assets/ilustration/stars.svg"
+              alt="punt"
+            />
+          </div>
+        </div>
+        <img class="galeria__image" src="../assets/images/trending19.jpeg" />
+      </a>
+      <a class="galeria__item" href="#">
+        <div class="contenido">
+          <img class="avatar" src="../assets/avatars/Avatar2.svg" />
+          <div class="sub_contenido">
+            <h5 class="nombre">Obatalá Barak</h5>
+            <img
+              class="puntuation"
+              src="../assets/ilustration/stars.svg"
+              alt="punt"
+            />
+          </div>
+        </div>
+        <img class="galeria__image" src="../assets/images/trending20.jpeg" />
+      </a>
+      <a class="galeria__item" href="#">
+        <div class="contenido">
+          <img class="avatar" src="../assets/avatars/Avatar4.svg" />
+          <div class="sub_contenido">
+            <h5 class="nombre">Antonio Rodríguez</h5>
+            <img
+              class="puntuation"
+              src="../assets/ilustration/stars.svg"
+              alt="punt"
+            />
+          </div>
+        </div>
+        <img class="galeria__image" src="../assets/images/trending22.jpeg" />
+      </a>
+      <a class="galeria__item" href="#">
+        <div class="contenido">
+          <img class="avatar" src="../assets/avatars/Avatar3.svg" />
+          <div class="sub_contenido">
+            <h5 class="nombre">Ana Fernández</h5>
+            <img
+              class="puntuation"
+              src="../assets/ilustration/stars.svg"
+              alt="punt"
+            />
+          </div>
+        </div>
+        <img class="galeria__image" src="../assets/images/trending23.jpeg" />
+      </a>
+      <a class="galeria__item" href="#">
+        <div class="contenido">
+          <img class="avatar" src="../assets/avatars/Avatar7.svg" />
+          <div class="sub_contenido">
+            <h5 class="nombre">Abraham Suárez</h5>
+            <img
+              class="puntuation"
+              src="../assets/ilustration/stars.svg"
+              alt="punt"
+            />
+          </div>
+        </div>
+        <img class="galeria__image" src="../assets/images/trending24.jpeg" />
+      </a>
+      <a class="galeria__item" href="#">
+        <div class="contenido">
+          <img class="avatar" src="../assets/avatars/Avatar4.svg" />
+          <div class="sub_contenido">
+            <h5 class="nombre">Antonio Rodríguez</h5>
+            <img
+              class="puntuation"
+              src="../assets/ilustration/stars.svg"
+              alt="punt"
+            />
+          </div>
+        </div>
+        <img class="galeria__image" src="../assets/images/trending25.jpg" />
+      </a>
+      <a class="galeria__item" href="#">
+        <div class="contenido">
+          <img class="avatar" src="../assets/avatars/Avatar6.svg" />
+          <div class="sub_contenido">
+            <h5 class="nombre">Estuard Littel</h5>
+            <img
+              class="puntuation"
+              src="../assets/ilustration/stars.svg"
+              alt="punt"
+            />
+          </div>
+        </div>
+        <img class="galeria__image" src="../assets/images/trending26.jpg" />
+      </a>
+      <a class="galeria__item" href="#">
+        <div class="contenido">
+          <img class="avatar" src="../assets/avatars/Avatar8.svg" />
+          <div class="sub_contenido">
+            <h5 class="nombre">Lana Roades</h5>
+            <img
+              class="puntuation"
+              src="../assets/ilustration/stars.svg"
+              alt="punt"
+            />
+          </div>
+        </div>
+        <img class="galeria__image" src="../assets/images/trending27.jpg" />
+      </a>
+      <a class="galeria__item" href="#">
+        <div class="contenido">
+          <img class="avatar" src="../assets/avatars/Avatar5.svg" />
+          <div class="sub_contenido">
+            <h5 class="nombre">Alberto De la Rosa</h5>
+            <img
+              class="puntuation"
+              src="../assets/ilustration/stars.svg"
+              alt="punt"
+            />
+          </div>
+        </div>
+        <img class="galeria__image" src="../assets/images/trending28.jpg" />
+      </a>
+      <a class="galeria__item" href="#">
+        <div class="contenido">
+          <img class="avatar" src="../assets/avatars/Avatar8.svg" />
+          <div class="sub_contenido">
+            <h5 class="nombre">Lana Roades</h5>
+            <img
+              class="puntuation"
+              src="../assets/ilustration/stars.svg"
+              alt="punt"
+            />
+          </div>
+        </div>
+        <img class="galeria__image" src="../assets/images/trending29.jpg" />
+      </a>
     </div>
-
-
-</body>
-
+  </body>
 </html>
