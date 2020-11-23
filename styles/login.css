@@ -1,0 +1,124 @@
+
+
+/*======== FONDO BICOLOR ========= */
+
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    min-height: 100vh;
+}
+
+.izquierda,.derecha{
+    width: 50%;
+}
+
+.izquierda{
+    background-color:#38433F;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25); 
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.derecha{
+    background-color:#5C6864 ;
+}
+
+/* ========= FORMULARIO LOGIN ========= */
+
+.formulario{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    padding-top: 364px;
+    padding-bottom: 364px;
+}
+.derecha h1{
+    font-weight: 600;
+    font-size: 34px;
+    color: #ffffff;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.derecha h1:first-child{
+    margin-bottom: 50px;
+}
+
+.inputs{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+#email{
+    margin-bottom: 50px;
+    width: 395px;
+    height: 40px;
+    background-color: #ffffff;
+    color: black;
+
+    outline: none;
+    border-radius: 15px;
+    border: 2px solid #38433F;
+    box-sizing: border-box;
+    padding-top: 3px;
+    padding-left: 26px;
+    font-size: 19px;
+}
+#password{
+    width: 395px;
+    height: 40px;
+    background-color: #ffffff;
+    color: black;
+    
+    outline: none;
+    border-radius: 15px;
+    border: 2px solid #38433F;
+    box-sizing: border-box;
+    padding-top: 3px;
+    padding-left: 26px;
+    font-size: 19px;
+}
+#email_label{
+    margin-bottom: 5px;
+    color: #ffffff;
+}
+#password_label{
+    margin-bottom: 5px;
+    color: #ffffff;
+}
+.inputs a{
+    color: #ffffff;
+}
+.boton_login{
+    margin-top: 50px;
+    display: flex;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    justify-content: center;
+    align-items: center;
+    
+    background-color: #38433F;
+    width: 395px;
+    height: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.recordar{
+    font-style: normal;
+    font-weight: 100;
+    font-size: 10px;
+
+    text-align: right;
+    padding-top: 3px;
+    display: flex;
+    justify-content: space-between;
+}
+.recordar a{
+    text-decoration: none;
+}
+
+
+

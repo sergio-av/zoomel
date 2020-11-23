@@ -4,8 +4,14 @@
     margin: 0;
     padding: 0;
     font-family: 'Inter', sans-serif;
-    background-color: #5C6864;
+    background-image: url(../assets/Fondo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
     color: #FFFFFF;
+}
+body *{
+    background: none;
+
 }
 
 /*============== HEADER ==========*/
@@ -13,6 +19,7 @@
     justify-content: space-between;
     display: flex;
     align-items: center;
+
     padding-top: 100px;
     padding-left: 99px;
     padding-right: 100px;
@@ -52,4 +59,52 @@
 .menu img{
     color: #EEB53C;
     opacity: 100%;
+}
+
+/*============= Centro =============== */
+
+.centro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+      
+    padding-left: 527px;
+    padding-right: 529px;
+    padding-top: 391px;
+    padding-bottom: 606px;
+}
+
+.home{
+    width: 384px;
+    height: 384px;
+}
+
+.centro p{
+    margin-top: 74px;
+    font-size: 28px;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* ================ FOOTER ============= */
+footer{
+    padding-bottom: 80px;
+}
+
+.redes ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.redes ul li:not(:last-child){
+    padding-right: 80px;
+}
+
+.redes img{
+    width: 30px;
+    height: 30px;
+    color: #FFFFFF;
 }
