@@ -108,3 +108,20 @@ footer{
     height: 30px;
     color: #FFFFFF;
 }
+
+/*RESPONSIVE*/
+
+@media (max-width: 1300px) {
+    .menu{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .items{
+        padding-right: 0;
+    }
+
+    .logo{
+        padding-left: 0;
+    }
+}
