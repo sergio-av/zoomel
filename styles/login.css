@@ -42,6 +42,7 @@ body{
     color: #ffffff;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+
 .derecha h1:first-child{
     margin-bottom: 50px;
 }
@@ -120,5 +121,24 @@ body{
     text-decoration: none;
 }
 
+@media (max-width: 1300px) {
+    body {
+        flex-direction: column;
+    }
+
+    .izquierda,.derecha{
+        width: 100%;
+    }
+
+    .izquierda img {
+        width: 280px;
+        padding: 50px;
+    }
+
+    .formulario{
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+}
 
 
