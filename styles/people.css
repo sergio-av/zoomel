@@ -1,0 +1,151 @@
+.header_back {
+  width: 1120px;
+  margin: 124px auto;
+  margin-bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.go_back {
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 140%;
+  color: #e5e5e5;
+  background: none;
+}
+
+.go_back img {
+  background: none;
+}
+
+.go_back:hover {
+  cursor: pointer;
+  filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.25));
+}
+
+.go_back img {
+  margin-right: 11px;
+}
+
+/*Overview*/
+.overview {
+  margin: 93px auto;
+  width: 1076.11px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px;
+  margin-bottom: 0;
+}
+
+.texto {
+  width: 590.11px;
+  display: flex;
+  flex-direction: column;
+}
+
+.name {
+  margin-bottom: 29px;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 140%;
+  color: #ffffff;
+}
+
+.parr {
+  font-weight: 500;
+  font-size: 19px;
+  line-height: 160%;
+  color: #ffffff;
+}
+
+/*Sections*/
+.sections {
+  margin-top: 124px;
+  width: 100%;
+  background-color: #38433f;
+  display: flex;
+  align-items: center;
+  padding: 119px 0;
+}
+
+.sections * {
+  background: none;
+}
+
+.conten {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.item:not(:last-child) {
+  margin-right: 400px;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.list {
+  margin-top: 45px;
+  list-style: none;
+  text-align: center;
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 140%;
+  color: #fefafa;
+}
+
+.list li:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.works {
+    margin-top: 206px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.works img {
+    margin-bottom: 130px;
+}
+
+/*Responsive*/
+@media (max-width: 1300px) {
+  .header_back {
+    width: auto;
+    justify-content: space-around;
+  }
+  .overview {
+    width: auto;
+    flex-direction: column;
+  }
+  .texto {
+    width: auto;
+    margin: 50px;
+  }
+
+  .conten {
+    flex-direction: column;
+  }
+
+  .item:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 80px;
+  }
+
+  .works img {
+    width: 450px;
+  }
+}
