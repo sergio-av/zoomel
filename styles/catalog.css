@@ -1,0 +1,54 @@
+.categorias{
+
+    max-width: 1133px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 119px auto;
+    flex-wrap: wrap;
+    
+}
+/* FICHA */
+.categoria{
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+    background: #38433f;
+    box-shadow: 0px 6px 6px 0px #000000 25%;
+    border-radius: 30px;
+    margin-top: 150px;
+}
+.nombre{
+    display: flex;
+    align-content: center;
+    height: 40px;
+    padding-top: 10px;
+    font-size:20px;
+    font-weight: 500;
+}
+.imagen{
+    width: 395px;
+    margin: 0px
+}
+.picture{
+    width: 395px;
+}
+/*      FILAS    */
+.fila_izq{
+    display: flex;
+    flex-direction: column;
+}
+
+.fila_der{
+    display: flex;
+    flex-direction: column;
+}
+/* RESPONSIVE */
+@media (max-width: 1300px) {
+    .categorias{
+        flex-direction: column;
+    }
+  }
