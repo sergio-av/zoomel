@@ -1,94 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Zoomel</title>
-    <link rel="stylesheet" href="../styles/catalog.css">
-    <link rel="stylesheet" href="../styles/main.css">
-</head>
-<body>
+    <link rel="stylesheet" href="../styles/catalog.css" />
+    <link rel="stylesheet" href="../styles/main.css" />
+    <!--Animations-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
+  <body>
     <!-- HEADER -->
     <header>
-        <nav class="menu">
-            <div class="logo">
-                <a href="index.html"><img src="../assets/logo/logo.svg" alt="logo"></a>
-            </div>
-            <ul class="items">
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="../views/trending.html">Trending</a></li>
-                <li><a href="../views/catalog.html">Catálogo</a></li>
-                <li><a href="../views/fotographers.html">Fotógrafos</a></li>
-                <li><a href="../views/login.html"><img src="../assets/icon/log-out.svg" alt="log-out"></a></li>
-            </ul>
-        </nav>
+      <nav class="menu">
+        <div class="logo">
+          <a href="index.html"
+            ><img src="../assets/logo/logo.svg" alt="logo"
+          /></a>
+        </div>
+        <ul class="items">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../views/trending.html">Trending</a></li>
+          <li><a href="../views/catalog.html">Catálogo</a></li>
+          <li><a href="../views/fotographers.html">Fotógrafos</a></li>
+          <li>
+            <a href="../views/login.html"
+              ><img src="../assets/icon/log-out.svg" alt="log-out"
+            /></a>
+          </li>
+        </ul>
+      </nav>
     </header>
-    <h1>Catálogo</h1>
+    <h1 class="animate__animated animate__pulse">Catálogo</h1>
     <h2>
-        Aquí encontraras nuestra variedad de categorias
-        Desde la que podras accder a ellas
+      Aquí encontraras nuestra variedad de categorias Desde la que podras accder
+      a ellas
     </h2>
+
+    <!--Buscador-->
+    <form class="buscador">
+      <input type="text" id="buscar" placeholder="Encuentra tu Categoria" />
+    </form>
+
     <!-- Categorias -->
     <div class="categorias">
-        
-        <div class="columna_izq">    
-            <div id="naturaleza" class="categoria">
-                <div class="imagen">
-                    <a href="../views/genres/paisajes.html"><img class="picture" src="../assets/catalog/naturaleza.png" alt="paisajes"></a>
-                </div>
-                <div class="nombre">
-                    <h4>Paisajes</h4>
-                </div>
-            </div>
-            
-            <div id="personas" class="categoria">
-                <div class="imagen">
-                    <a href="../views/genres/personas.html"><img class="picture" src="../assets/catalog/personas.png" alt="personas"></a>
-                </div>
-                <div class="nombre">
-                    <h4>Personas</h4>
-                </div>
-            </div>
-                  
-            <div id="mascotas" class="categoria">
-                <div class="imagen">
-                    <a href="../views/genres/mascotas.html"><img class="picture"  src="../assets/catalog/mascota.png" alt="mascotas"></a>
-                </div>
-                <div class="nombre">
-                    <h4>Mascotas</h4>
-                </div>
-            </div>
-        </div>
-        
-        <div class="columna_der">
-            <div id="comida" class="categoria">
-                <div class="imagen">
-                    <a href="../views/genres/comida.html"><img class="picture"  src="../assets/catalog/comida.png" alt="comida"></a>
-                </div>
-                <div class="nombre">
-                    <h4>Comidas</h4>
-                </div>
-            </div>
-    
-            <div id="interiores" class="categoria">
-                <div class="imagen">
-                    <a href="../views/genres/interiores.html"><img class="picture"  src="../assets/catalog/interiores.png" alt="interiores"></a>
-                </div>
-                <div class="nombre">
-                    <h4>Interiores</h4>
-                </div>
-            </div>
-    
-            <div id="artistica" class="categoria">
-                <div class="imagen">
-                    <a href="../views/genres/artisticas.html"><img class="picture"  src="../assets/catalog/artistica.png" alt="artistica"></a>
-                </div>
-                <div class="nombre">
-                    <h4>Artísticas</h4>
-                </div>
-            </div>
-        </div>
+      <div class="columna_izq">
+        <div id="naturaleza" class="categoria">
+          <div class="imagen">
+            <a href="../views/genres/paisajes.html"
+              ><img
+                class="picture"
+                src="../assets/catalog/naturaleza.png"
+                alt="paisajes"
+            /></a>
+          </div>
+          <div class="nombre">
+            <h4>Paisajes</h4>
+          </div>
         </div>
 
-</body>
+        <div id="personas" class="categoria">
+          <div class="imagen">
+            <a href="../views/genres/personas.html"
+              ><img
+                class="picture"
+                src="../assets/catalog/personas.png"
+                alt="personas"
+            /></a>
+          </div>
+          <div class="nombre">
+            <h4>Personas</h4>
+          </div>
+        </div>
+
+        <div id="mascotas" class="categoria">
+          <div class="imagen">
+            <a href="../views/genres/mascotas.html"
+              ><img
+                class="picture"
+                src="../assets/catalog/mascota.png"
+                alt="mascotas"
+            /></a>
+          </div>
+          <div class="nombre">
+            <h4>Mascotas</h4>
+          </div>
+        </div>
+      </div>
+
+      <div class="columna_der">
+        <div id="comida" class="categoria">
+          <div class="imagen">
+            <a href="../views/genres/comida.html"
+              ><img
+                class="picture"
+                src="../assets/catalog/comida.png"
+                alt="comida"
+            /></a>
+          </div>
+          <div class="nombre">
+            <h4>Comidas</h4>
+          </div>
+        </div>
+
+        <div id="interiores" class="categoria">
+          <div class="imagen">
+            <a href="../views/genres/interiores.html"
+              ><img
+                class="picture"
+                src="../assets/catalog/interiores.png"
+                alt="interiores"
+            /></a>
+          </div>
+          <div class="nombre">
+            <h4>Interiores</h4>
+          </div>
+        </div>
+
+        <div id="artistica" class="categoria">
+          <div class="imagen">
+            <a href="../views/genres/artisticas.html"
+              ><img
+                class="picture"
+                src="../assets/catalog/artistica.png"
+                alt="artistica"
+            /></a>
+          </div>
+          <div class="nombre">
+            <h4>Artísticas</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
