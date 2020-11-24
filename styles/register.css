@@ -9,6 +9,9 @@ body{
 
 .izquierda,.derecha{
     width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .izquierda{
@@ -30,9 +33,6 @@ body{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-
-    padding-top: 364px;
-    padding-bottom: 364px;
 }
 .derecha h1{
     font-weight: 600;
@@ -149,4 +149,34 @@ body{
     padding-top: 3px;
     padding-left: 26px;
     font-size: 19px;
+}
+
+.login {
+    font-style: normal;
+    font-weight: 100;
+    font-size: 10px;
+
+    text-align: right;
+    padding-top: 3px;
+    text-decoration: none;
+}
+
+@media (max-width: 1300px) {
+    body {
+        flex-direction: column;
+    }
+
+    .izquierda,.derecha{
+        width: 100%;
+    }
+
+    .izquierda img {
+        width: 280px;
+        padding: 50px;
+    }
+
+    .formulario{
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
 }
