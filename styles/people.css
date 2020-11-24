@@ -119,6 +119,8 @@
 
 .works img {
     margin-bottom: 130px;
+    width: 750px;
+    border-radius: 25px;
 }
 
 /*Responsive*/
