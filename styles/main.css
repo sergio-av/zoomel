@@ -20,7 +20,7 @@ body *{
     display: flex;
     align-items: center;
 
-    padding-top: 100px;
+    padding-top: 80px;
     padding-left: 99px;
     padding-right: 100px;
 }
@@ -55,12 +55,6 @@ body *{
     color: #EEB53C;
     opacity: 100%;
 }
-
-.menu img{
-    color: #EEB53C;
-    opacity: 100%;
-}
-
 /*============= Centro =============== */
 
 .centro{
@@ -69,10 +63,7 @@ body *{
     justify-content: center;
     flex-direction: column;
       
-    padding-left: 527px;
-    padding-right: 529px;
-    padding-top: 391px;
-    padding-bottom: 606px;
+    margin: 130px auto;
 }
 
 .home{
@@ -81,10 +72,15 @@ body *{
 }
 
 .centro p{
-    margin-top: 74px;
-    font-size: 28px;
+    margin-top: 14px;
+    font-size: 24px;
     font-weight: 600;
     text-align: center;
+    width: 500px;
+}
+
+.centro img {
+    width: 300px;
 }
 
 /* ================ FOOTER ============= */
@@ -107,4 +103,22 @@ footer{
     width: 30px;
     height: 30px;
     color: #FFFFFF;
+}
+
+/*RESPONSIVE*/
+
+@media (max-width: 1300px) {
+    .menu{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .items{
+        padding-right: 0;
+        margin-top: 20px;
+    }
+
+    .logo{
+        padding-left: 0;
+    }
 }
