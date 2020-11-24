@@ -122,3 +122,31 @@ footer{
         padding-left: 0;
     }
 }
+
+/*BUSCADOR*/
+.buscador {
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#buscar {
+    background: url(../assets/icon/search.svg) no-repeat 360px 7.5px;
+    width: 395px;
+    margin: 0 auto;
+    padding: 4px 18px;
+    border: 0;
+    border-bottom: 3px solid #C9CFCD;
+    box-sizing: border-box;
+    outline: 0;
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 140%;
+    color: white;
+}
+
+#buscar::placeholder {
+    color: #C9CFCD;
+    opacity: 1;
+}
