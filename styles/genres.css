@@ -1,3 +1,13 @@
+.go_back {
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 140%;
+  color: #e5e5e5;
+  background: none;
+}
 h1 {
   font-weight: 600;
   font-size: 34px;
