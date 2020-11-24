@@ -1,3 +1,3 @@
 # Zoomel
 Web fotografias interfaces
-[Web](http://www.limni.net)
+[Web](https://sergio-av.github.io/zoomel/)
